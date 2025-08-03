@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment  # Имя deployment
+spec:
+  replicas: 1  # Количество реплик (подов)
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:stable  # Используем официальный образ nginx:stable
+          ports:
+            - containerPort: 80  # Открываем порт 80 внутри контейнера
