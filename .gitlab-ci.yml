@@ -1,0 +1,9 @@
+stages:
+  - test  # Объявляем стадию test
+
+test_nginx:
+  stage: test  # Название задания и его стадия
+  script:
+    - echo "Проверяем наличие nginx..."
+    - which nginx   # Проверяем установлен ли бинарник nginx
+    - nginx -v      # Выводим версию nginx
