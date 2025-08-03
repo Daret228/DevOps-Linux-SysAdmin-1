@@ -33,6 +33,8 @@ sudo systemctl start nginx
 systemctl status nginx
 ```
 
+<img width="976" height="281" alt="{B44F4238-CBF1-4A59-828B-DC836AB6B1B6}" src="https://github.com/user-attachments/assets/519cee4e-bfc9-4385-9aa6-59ae9576b992" />
+
 ---
 
 ## 2. GitLab CI/CD пайплайн (.gitlab-ci.yml)
@@ -70,6 +72,8 @@ docker run -d -p 8080:80 devops-nginx
 ```bash
 curl http://localhost:8080
 ```
+
+<img width="947" height="268" alt="{286DFB47-AA2C-4B14-9495-74831B94BA0A}" src="https://github.com/user-attachments/assets/84621e20-794b-4acd-bf12-5d93bc9b10b3" />
 
 ---
 
